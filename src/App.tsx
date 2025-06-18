@@ -5,7 +5,7 @@ import UserPage from "@/pages/user";
 import LoginTelegramPage from "@/pages/loginTelegram";
 import { CartProvider } from "@/CartProvider";
 import { MainLayout } from "@/layouts/MainLayout";
-import ProtectedRoute from "@/components/ProtectedRoute";
+//import ProtectedRoute from "@/components/ProtectedRoute";
 import DefaultLayout from "@/layouts/default";
 
 function App() {
@@ -25,14 +25,14 @@ function App() {
                     }
                 >
                     <Route path="cart" element={
-                        <ProtectedRoute>
+                        //<ProtectedRoute>
                             <CartPage />
-                        </ProtectedRoute>
+                        //</ProtectedRoute>
                     } />
                     <Route path="user" element={
-                        <ProtectedRoute>
+                        //<ProtectedRoute>
                             <UserPage />
-                        </ProtectedRoute>
+                        //</ProtectedRoute>
                     } />
                 </Route>
             </Routes>
